@@ -12,6 +12,13 @@
       <ion-title size="large">Tab 1</ion-title>
     </ion-toolbar>
   </ion-header>
+  <ion-button expand="full" (click)="setUser()">Set User ID</ion-button>
+  <ion-button expand="full" (click)="setProperty()">Set User Property</ion-button>
+  <ion-button expand="full" (click)="logEvent()">Log Event</ion-button>
+  <ion-button expand="full" routerLink="/second">Go to second page</ion-button>
+  <ion-button expand="full" (click)="toggleDataCollection()">Toggle Data collection</ion-button>
+
+  Analytics enabled: {{ enabled }}
 
   <app-explore-container name="Tab 1 page"></app-explore-container>
 </ion-content>
